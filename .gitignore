@@ -1,0 +1,14 @@
+# Carthage
+BayAreaCommute/Carthage/*
+
+# Fastlane
+BayAreaCommute/fastlane/test_output/report.html
+BayAreaCommute/fastlane/report.xml
+BayAreaCommute/fastlane/test_output/report.junit
+
+# Other
+BayAreaCommute/BayAreaCommute.xcodeproj/project.xcworkspace/xcuserdata/*
+BayAreaCommute/BayAreaCommute.xcodeproj/xcuserdata/*
+BayAreaCommute/BayAreaCommute.xcodeproj/xcshareddata/*
+BayAreaCommute/Provisioning_Profiles/*
+BayAreaCommute/bart_stations.json
