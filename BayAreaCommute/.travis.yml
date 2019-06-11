@@ -1,0 +1,28 @@
+os: osx
+osx_image: xcode10.2
+language: swift
+
+env: 
+  LC_ALL=en_US.UTF-8
+  LANG=en_US.UTF-8
+
+cache: 
+  directories: 
+    - Carthage
+    - bundler
+
+before_install:
+  - brew install carthage || true
+  - brew outdated carthage || brew upgrade carthage
+  - gem update --system
+  - gem install bundler
+
+install:
+  - bundle install
+  - bundle update fastlane
+
+before_script:
+  - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
+
+script:
+  - bundle exec fastlane tests
