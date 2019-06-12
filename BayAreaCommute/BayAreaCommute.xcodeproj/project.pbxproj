@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		25251F792290E520005F1875 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25251F782290E520005F1875 /* StationsViewModel.swift */; };
+		252F17CA22B0A72500E1EA63 /* bart_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 252F17C922B0A72500E1EA63 /* bart_stations.json */; };
 		2546213722965A5700609324 /* StationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546213622965A5700609324 /* StationDetailViewModel.swift */; };
 		25731CC92291A46400F2120D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25731CC82291A46400F2120D /* Networking.swift */; };
 		25731CD12291A60F00F2120D /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25731CD02291A60F00F2120D /* StationDetailViewController.swift */; };
-		257F8B7F228E6CC200D87DB4 /* bart_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 257F8B7E228E6CC200D87DB4 /* bart_stations.json */; };
 		257F8B822290884F00D87DB4 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F8B812290884F00D87DB4 /* Stations.swift */; };
 		258F74C022A0DC87001C3C2E /* EstimatedDepartureDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F74BF22A0DC87001C3C2E /* EstimatedDepartureDecodable.swift */; };
 		258F74C222A0DD26001C3C2E /* EstimatedDeparture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F74C122A0DD26001C3C2E /* EstimatedDeparture.swift */; };
@@ -54,10 +54,10 @@
 
 /* Begin PBXFileReference section */
 		25251F782290E520005F1875 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		252F17C922B0A72500E1EA63 /* bart_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bart_stations.json; sourceTree = "<group>"; };
 		2546213622965A5700609324 /* StationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewModel.swift; sourceTree = "<group>"; };
 		25731CC82291A46400F2120D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		25731CD02291A60F00F2120D /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
-		257F8B7E228E6CC200D87DB4 /* bart_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bart_stations.json; sourceTree = "<group>"; };
 		257F8B812290884F00D87DB4 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		258F74BF22A0DC87001C3C2E /* EstimatedDepartureDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedDepartureDecodable.swift; sourceTree = "<group>"; };
 		258F74C122A0DD26001C3C2E /* EstimatedDeparture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedDeparture.swift; sourceTree = "<group>"; };
@@ -277,9 +277,9 @@
 		25CBB0C9228D2DB50074C267 /* BayAreaCommute */ = {
 			isa = PBXGroup;
 			children = (
+				252F17C922B0A72500E1EA63 /* bart_stations.json */,
 				25CBB0CA228D2DB50074C267 /* AppDelegate.swift */,
 				25CBB0D1228D2DB60074C267 /* Assets.xcassets */,
-				257F8B7E228E6CC200D87DB4 /* bart_stations.json */,
 				25F2D9F92290AF13005EEF0B /* CustomView.swift */,
 				25CBB0D6228D2DB60074C267 /* Info.plist */,
 				25CBB0D3228D2DB60074C267 /* LaunchScreen.storyboard */,
@@ -433,7 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257F8B7F228E6CC200D87DB4 /* bart_stations.json in Resources */,
+				252F17CA22B0A72500E1EA63 /* bart_stations.json in Resources */,
 				25CBB0D5228D2DB60074C267 /* LaunchScreen.storyboard in Resources */,
 				25CBB0D2228D2DB60074C267 /* Assets.xcassets in Resources */,
 			);
