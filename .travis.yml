@@ -11,18 +11,19 @@ cache:
     - BayAreaCommute/Carthage
     - BayAreaCommute/bundler
 
-jobs:
-  include:
-    - stage: "Unit Tests"
-    before_install:
-      - brew install carthage || true
-      - brew outdated carthage || brew upgrade carthage
-      - gem update --system
-      - gem install bundler
-      - cd BayAreaCommute
-    install:
-      - bundle install
-      - bundle update fastlane
-    before_script:
-      - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
-    script: bundle exec fastlane tests
+before_install:
+  - brew install carthage || true
+  - brew outdated carthage || brew upgrade carthage
+  - gem update --system
+  - gem install bundler
+  - cd BayAreaCommute
+
+install:
+  - bundle install
+  - bundle update fastlane
+
+before_script:
+  - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
+
+script:
+  - bundle exec fastlane tests
