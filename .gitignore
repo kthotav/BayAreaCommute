@@ -2,9 +2,7 @@
 BayAreaCommute/Carthage/*
 
 # Fastlane
-BayAreaCommute/fastlane/test_output/report.html
-BayAreaCommute/fastlane/report.xml
-BayAreaCommute/fastlane/test_output/report.junit
+BayAreaCommute/fastlane/*
 
 # Other
 BayAreaCommute/BayAreaCommute.xcodeproj/project.xcworkspace/xcuserdata/*
