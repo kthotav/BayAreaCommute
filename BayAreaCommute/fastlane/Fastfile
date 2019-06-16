@@ -17,8 +17,14 @@ default_platform(:ios)
 
 platform :ios do
 
-  desc "Get certificates and sign provisioning profile"
-  lane :code_sign do
+  desc "Get certificates and sign provisioning profile for dev"
+  lane :code_sign_dev do
+    get_certificates(development: true)
+    get_provisioning_profile(development: true)
+  end
+
+  desc "Get certificates and sign provisioning profile for appstore"
+  lane :code_sign_appstore do
     get_certificates
     get_provisioning_profile
   end
@@ -26,6 +32,14 @@ platform :ios do
   desc "Runs all the tests"
   lane :tests do
     run_tests(scheme: "BayAreaCommute")
+  end
+
+  desc "Beta deployment"
+  lane :beta do
+    sync_code_signing(type: "appstore")
+    increment_build_number
+    build_app
+    upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 
 end

@@ -16,11 +16,26 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios test
+### ios code_sign_dev
 ```
-fastlane ios test
+fastlane ios code_sign_dev
+```
+Get certificates and sign provisioning profile for dev
+### ios code_sign_appstore
+```
+fastlane ios code_sign_appstore
+```
+Get certificates and sign provisioning profile for appstore
+### ios tests
+```
+fastlane ios tests
 ```
 Runs all the tests
+### ios beta
+```
+fastlane ios beta
+```
+Beta deployment
 
 ----
 

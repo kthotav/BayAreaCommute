@@ -1,0 +1,8 @@
+git_url("git@github.com:kthotav/BayAreaCommute-Certs.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier("com.karthik.bayareacommute")
+username("kthotav@gmail.com") # Your Apple Developer Portal username

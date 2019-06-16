@@ -1,5 +1,8 @@
-# app_identifier("[[com.karthik.bayareacommute]]") # The bundle identifier of your app
-# apple_id("[[kthotav@gmail.com]]") # Your Apple email address
+# The bundle identifier of your app
+app_identifier("com.karthik.bayareacommute")
+
+# Your Apple email address
+apple_id("kthotav@gmail.com") 
 
 
 # For more information about the Appfile, see:
